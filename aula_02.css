@@ -1,0 +1,40 @@
+/*Aula 16: Primeiras regras do CSS parte 1*/
+
+h1 {
+    color:blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 56px;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 48px;
+    font-style: italic;
+}
+
+h3{
+    font-size: 38px;
+    text-transform: capitalize; /* primeira letra em maiúsculo */
+    text-align: center;
+    text-decoration: underline; /*temos right-throught, overline*/
+}
+
+p {
+    text-align: justify; /*não é muito recomendado pois pode prejudicar a leitura (causa espaços muito grandes). O mais comum é left e center.*/
+    font-size: 28px;
+    text-indent: 58px; /* espaço antes de começar o parágrafo. */
+    color: #000000;
+    font-variant: small-caps;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Informações adicionais para não esquecer: */
+
+/* uppercase: todas as letras em maiúsculas */
+
+/*text-align: center, left, right*/
+
+/*small-caps: Coloca todas as letras como se fossem maiúsculas, mas o tamanho varia a depender se a letra está maiúscula ou minúscula.*/
