@@ -1,3 +1,8 @@
+<!--Tópicos:
+1 - Width e Height
+2 - margin e padding
+ -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,17 +17,39 @@
 
         p{
             background-color: #ccc;
+            padding: 20px 36px 20px 20px;
         }
 
         h1{
             background-color: #eba1a1;
+            padding: 16px; /* espaço interno */
+
+            /* também podemos especificar o padding da seguinte forma:
+            padding-top:50px;
+            padding-right:40px;
+            padding-bottom:30px;
+            padding-left:20px;
+            p {padding: 50px 40px 30px 20px}*/
+
+            padding: 50px 40px 30px 20px;
+            
+            /*observação: um desses valores pode ser omitido. Duplicando os valores colocados.
+            */
+
+            /* a mesma coisa acima acontece com o margin */
+            margin: 36px; /* espaço externo */
         }
 
         h2{
             background-color: rgb(156, 255, 156);
             width: 50%; /* pode usar px, mas ele não aumenta/diminui com o tamanho da tela que nem os pixels -> ao usar % ele altera pois ele é relativo ao elemento pai.*/
             height: 50px /* a altura em % não se comporta tão bem*/;
+
+            margin-top: 50px;
+            margin-left: 100px;
+            margin: 50px 0 0 100px;
         }
+
     </style>
 </head>
 <body>

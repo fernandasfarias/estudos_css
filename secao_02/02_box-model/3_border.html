@@ -1,0 +1,97 @@
+<!--Tópicos:
+Border: width (espessura), style(tipo) e color -->
+
+<!-- Tipos de borda mais comuns:
+ 1 - none 
+ 2 - hidden (se diferencia do none quando tem uma imagem de fundo)
+ 3 - dotted (pontilhado)
+ 4 - dashed (pontilhado mais retangular)
+ 5 - solid (clássico)
+ 6 - double 
+ 7 - groove 
+ 8 - ridge 
+ 9 - insert 
+ 10 - outset -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        .destaque{
+            background-color: orange;
+        }
+
+        .size{
+            width: 50%;
+            height: 100px;
+        }
+
+        .padding{
+            padding: 26px;
+        }
+
+        .border{
+            border: 5px dotted red;
+            /* width - style - color */
+
+            /* podemos definir cada lado da borda individualmente */
+
+            border-top-style: solid;
+            border-right-width: 15px;
+            border-bottom-color: blueviolet;
+            border-left-color: purple;
+            border-right-color: purple;
+            border-top: 10px groove pink;
+
+        }
+
+        p {
+            background-color: rgb(208, 196, 196);
+        }
+
+        h1{
+            background-color: #eba1a1;
+            padding: 16px;
+            padding: 50px 40px 30px 20px;
+            margin: 36px;
+        }
+
+        h2{
+            background-color: rgb(156, 255, 156);
+            width: 50%;
+            height: 50%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Box Model</h1>
+
+    <h2>Width e Height</h2>
+
+    <p class="destaque size padding border">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+
+    <h2>Padding</h2>
+
+    <p class="destaque size padding border">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+
+    <h2>Margin</h2>
+
+    <p class="destaque size padding border">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
